@@ -2,14 +2,14 @@ from os import getenv
 
 from decouple import config
 
-APP_ID = getenv("APP_ID", "16942102")
+APP_ID = getenv("APP_ID", "27424332")
 
-API_HASH = getenv("API_HASH", "eb72f958fd9dbad872a9ff1836ad96e6")
+API_HASH = getenv("API_HASH", "cb93e76ed8e78c8081f52cd3aa66f08b")
 
 HEROKU_APP_NAME = config("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = config("HEROKU_API_KEY", None)
 
-BOT_TOKEN = config("BOT_TOKEN", default=None)
+BOT_TOKEN = config("BOT_TOKEN", "6124885849:AAHSIMDvsgyfX_PUb0RsfNtbJ_So2BVmkSA")
 BOT_TOKEN2 = config("BOT_TOKEN2", default=None)
 BOT_TOKEN3 = config("BOT_TOKEN3", default=None)
 BOT_TOKEN4 = config("BOT_TOKEN4", default=None)
@@ -35,7 +35,7 @@ BOT_TOKEN23 = config("BOT_TOKEN23", default=None)
 BOT_TOKEN24 = config("BOT_TOKEN24", default=None)
 BOT_TOKEN25 = config("BOT_TOKEN25", default=None)
 try:
-    SUDO_USERS = str(getenv("SUDO_USERS", "123 456")).split(" ")
+    SUDO_USERS = str(getenv("SUDO_USERS", "5348648456")).split(" ")
 except Exception:
     SUDO_USERS = str(getenv("SUDO_USERS", "123 456"))
 
@@ -48,6 +48,6 @@ START_PIC = getenv("START_PIC", None)
 
 HELP_MSG = getenv("HELP_MSG", None)
 HELP_PIC = getenv("HELP_PIC", "https://graph.org/file/89ed7d3a2bd8aa2c61385.jpg")
-LOG_CHANNEL = getenv("LOG_CHANNEL", None)
+LOG_CHANNEL = getenv("LOG_CHANNEL", "-1001401958446")
 
 HANDLER = getenv("HANDLER", "/")
